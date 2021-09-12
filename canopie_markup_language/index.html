@@ -1,0 +1,953 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <meta name="author" content="Canopie">
+      
+      
+        <link rel="canonical" href="https://canopie.io/canopie_markup_language/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.0">
+    
+    
+      
+        <title>Canopie Markup Language - Canopie Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.33e2939f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#canopie-markup-language" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Canopie Docs" class="md-header__button md-logo" aria-label="Canopie Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Canopie Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Canopie Markup Language
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Canopie Docs" class="md-nav__button md-logo" aria-label="Canopie Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Canopie Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Canopie Markup Language
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Canopie Markup Language
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#canopie-components" class="md-nav__link">
+    Canopie Components
+  </a>
+  
+    <nav class="md-nav" aria-label="Canopie Components">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    Attributes
+  </a>
+  
+    <nav class="md-nav" aria-label="Attributes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#event" class="md-nav__link">
+    @event
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boolean" class="md-nav__link">
+    ?boolean
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#currently-available-components" class="md-nav__link">
+    Currently Available Components
+  </a>
+  
+    <nav class="md-nav" aria-label="Currently Available Components">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#view" class="md-nav__link">
+    &lt;view&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text" class="md-nav__link">
+    &lt;text&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-input" class="md-nav__link">
+    &lt;text-input&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#button" class="md-nav__link">
+    &lt;button&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#icon-button" class="md-nav__link">
+    &lt;icon-button&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switch" class="md-nav__link">
+    &lt;switch&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#circular-progress" class="md-nav__link">
+    &lt;circular-progress&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dialog" class="md-nav__link">
+    &lt;dialog&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-and-list-item" class="md-nav__link">
+    &lt;list&gt; and &lt;list-item&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-list" class="md-nav__link">
+    &lt;image-list&gt;
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables-and-expressions" class="md-nav__link">
+    Variables and Expressions
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables and Expressions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nesting" class="md-nav__link">
+    Nesting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conditionals" class="md-nav__link">
+    Conditionals
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loops" class="md-nav__link">
+    Loops
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assignment-statement" class="md-nav__link">
+    Assignment Statement
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../javascript_sdk/" class="md-nav__link">
+        Javascript SDK
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../review/" class="md-nav__link">
+        Review Status
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mini_app_example/" class="md-nav__link">
+        Mini App Example
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enterprise/" class="md-nav__link">
+        Enterprise Tier
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#canopie-components" class="md-nav__link">
+    Canopie Components
+  </a>
+  
+    <nav class="md-nav" aria-label="Canopie Components">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    Attributes
+  </a>
+  
+    <nav class="md-nav" aria-label="Attributes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#event" class="md-nav__link">
+    @event
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boolean" class="md-nav__link">
+    ?boolean
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#currently-available-components" class="md-nav__link">
+    Currently Available Components
+  </a>
+  
+    <nav class="md-nav" aria-label="Currently Available Components">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#view" class="md-nav__link">
+    &lt;view&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text" class="md-nav__link">
+    &lt;text&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-input" class="md-nav__link">
+    &lt;text-input&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#button" class="md-nav__link">
+    &lt;button&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#icon-button" class="md-nav__link">
+    &lt;icon-button&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switch" class="md-nav__link">
+    &lt;switch&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#circular-progress" class="md-nav__link">
+    &lt;circular-progress&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dialog" class="md-nav__link">
+    &lt;dialog&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-and-list-item" class="md-nav__link">
+    &lt;list&gt; and &lt;list-item&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-list" class="md-nav__link">
+    &lt;image-list&gt;
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables-and-expressions" class="md-nav__link">
+    Variables and Expressions
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables and Expressions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nesting" class="md-nav__link">
+    Nesting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conditionals" class="md-nav__link">
+    Conditionals
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loops" class="md-nav__link">
+    Loops
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assignment-statement" class="md-nav__link">
+    Assignment Statement
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="canopie-markup-language">Canopie Markup Language</h1>
+<p>Canopie Markup Language, or CPML (<code>*.cpml</code>), is an HTML-like DSL. 
+It is mainly based on <strong>tags</strong>, with the capability of dynamic rendering 
+with <strong>variables / expressions</strong> and <strong>assignment statements</strong>.</p>
+<p>Canopie supports a subset of HTML tags as well as a collection of pre-built components 
+known as the Canopie Components.</p>
+<h2 id="canopie-components">Canopie Components</h2>
+<p>Canopie offers a library of UI components as building blocks for the mini app.
+It has built-in Material style, and can also be customised via CPSS.</p>
+<h3 id="attributes">Attributes</h3>
+<p>Each component has a list of attributes that it supports. 
+These attributes can be set to dynamic values using the <a href="#variables-and-expressions">variables and expressions notation</a>.</p>
+<p>Note that there are two types of special attributes:</p>
+<h4 id="event"><code>@event</code></h4>
+<p>To add a handler for the specified event.</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">button</span> <span class="err">@</span><span class="na">tap</span><span class="o">=</span><span class="s">{{onTap}}</span> <span class="p">/&gt;</span>
+</code></pre></div>
+<h4 id="boolean"><code>?boolean</code></h4>
+<p>To add a boolean attribute.
+This is mostly used for dynamic values, 
+as static boolean values can be set by simply including or omitting the attribute.</p>
+<div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Dynamic boolean value</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">button</span> <span class="err">?</span><span class="na">isDisabled</span><span class="o">=</span><span class="s">{{isDisabled}}</span> <span class="p">/&gt;</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Static true</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">button</span> <span class="na">isDisabled</span> <span class="p">/&gt;</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">Static false</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">button</span> <span class="p">/&gt;</span>
+</code></pre></div>
+</div>
+</div>
+<h3 id="currently-available-components">Currently Available Components</h3>
+<p>See our Storybook for examples and detailed documentation.</p>
+<p>More to come...</p>
+<h4 id="view"><code>&lt;view&gt;</code></h4>
+<p>The basic container for UI elements.</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">view</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="p">/&gt;</span>
+  <span class="p">&lt;</span><span class="nt">text</span><span class="p">&gt;</span>some text<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">view</span><span class="p">&gt;</span>
+</code></pre></div>
+<h4 id="text"><code>&lt;text&gt;</code></h4>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">text</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;content&quot;</span><span class="p">&gt;</span>some text<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+</code></pre></div>
+<h4 id="text-input"><code>&lt;text-input&gt;</code></h4>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">text-input</span>
+  <span class="na">id</span><span class="o">=</span><span class="s">&#39;text-input-id&#39;</span>
+  <span class="na">label</span><span class="o">=</span><span class="s">&#39;Email&#39;</span>
+  <span class="na">iconLeading</span><span class="o">=</span><span class="s">&#39;email&#39;</span>
+  <span class="na">iconTrailing</span><span class="o">=</span><span class="s">&#39;clear&#39;</span>
+  <span class="na">placeholder</span><span class="o">=</span><span class="s">&#39;your.name@example.com&#39;</span>
+  <span class="na">type</span><span class="o">=</span><span class="s">&#39;email&#39;</span>
+  <span class="na">helper</span><span class="o">=</span><span class="s">&#39;Please enter your email here.&#39;</span>
+  <span class="err">?</span><span class="na">isHelperPersistent</span><span class="o">=</span><span class="s">{{isHelperPersistent}}</span>
+  <span class="err">?</span><span class="na">isRequired</span><span class="o">=</span><span class="s">{{isRequired}}</span>
+  <span class="err">?</span><span class="na">isDisabled</span><span class="o">=</span><span class="s">{{isDisabled}}</span>
+  <span class="err">?</span><span class="na">isOutlined</span><span class="o">=</span><span class="s">{{isOutlined}}</span>
+  <span class="err">@</span><span class="na">change</span><span class="o">=</span><span class="s">{{onChange}}</span>
+<span class="p">/&gt;</span>
+</code></pre></div>
+<h4 id="button"><code>&lt;button&gt;</code></h4>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">button</span>
+  <span class="na">id</span><span class="o">=</span><span class="s">&#39;button-id&#39;</span>
+  <span class="na">label</span><span class="o">=</span><span class="s">&#39;Tap Me&#39;</span>
+  <span class="na">icon</span><span class="o">=</span><span class="s">&#39;home&#39;</span>
+  <span class="na">type</span><span class="o">=</span><span class="s">&#39;raised&#39;</span>
+  <span class="err">@</span><span class="na">tap</span><span class="o">=</span><span class="s">{{onTap}}</span>
+  <span class="err">?</span><span class="na">isDisabled</span><span class="o">=</span><span class="s">{{isDisabled}}</span>
+<span class="p">/&gt;</span>
+</code></pre></div>
+<h4 id="icon-button"><code>&lt;icon-button&gt;</code></h4>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">icon-button</span> 
+  <span class="na">id</span><span class="o">=</span><span class="s">&#39;icon-button-id&#39;</span>
+  <span class="na">icon</span><span class="o">=</span><span class="s">&#39;home&#39;</span>
+  <span class="na">label</span><span class="o">=</span><span class="s">&#39;home&#39;</span> 
+  <span class="err">@</span><span class="na">tap</span><span class="o">=</span><span class="s">{{onTap}}</span>
+<span class="p">/&gt;</span>
+</code></pre></div>
+<h4 id="switch"><code>&lt;switch&gt;</code></h4>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">switch</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;switch-id&#39;</span> <span class="err">@</span><span class="na">tap</span><span class="o">=</span><span class="s">{{onTap}}</span> <span class="p">/&gt;</span>
+</code></pre></div>
+<h4 id="circular-progress"><code>&lt;circular-progress&gt;</code></h4>
+<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Determinate</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">circular-progress</span>
+  <span class="na">id</span><span class="o">=</span><span class="s">&#39;circular-progress-determinate&#39;</span>
+  <span class="na">progress</span><span class="o">=</span><span class="s">0.7</span>
+  <span class="na">density</span><span class="o">=</span><span class="s">10</span>
+<span class="p">/&gt;</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Indeterminate</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">circular-progress</span>
+  <span class="na">id</span><span class="o">=</span><span class="s">&#39;circular-progress-indeterminate&#39;</span>
+  <span class="na">density</span><span class="o">=</span><span class="s">10</span>
+  <span class="na">isIndeterminate</span>
+  <span class="err">?</span><span class="na">isDone</span><span class="o">=</span><span class="s">{{isDone}}</span>
+<span class="p">/&gt;</span>
+</code></pre></div>
+</div>
+</div>
+<h4 id="dialog"><code>&lt;dialog&gt;</code></h4>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">dialog</span>
+  <span class="na">id</span><span class="o">=</span><span class="s">&#39;item-redeem-dialog&#39;</span>
+  <span class="na">heading</span><span class="o">=</span><span class="s">&#39;Confirm Your Choice&#39;</span>
+  <span class="na">primaryLabel</span><span class="o">=</span><span class="s">&#39;OK&#39;</span> 
+  <span class="na">secondaryLabel</span><span class="o">=</span><span class="s">&#39;Cancel&#39;</span>
+  <span class="err">@</span><span class="na">primarytap</span><span class="o">=</span><span class="s">{{onRedeem}}</span>
+  <span class="err">@</span><span class="na">secondarytap</span><span class="o">=</span><span class="s">{{onCancel}}</span>
+  <span class="err">@</span><span class="na">close</span><span class="o">=</span><span class="s">{{onClose}}</span>
+  <span class="err">?</span><span class="na">open</span><span class="o">=</span><span class="s">{{shouldShowDialog}}</span>
+<span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">text</span><span class="p">&gt;</span>
+    Are you sure to redeem points for this item?
+  <span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">dialog</span><span class="p">&gt;</span>
+</code></pre></div>
+<h4 id="list-and-list-item"><code>&lt;list&gt;</code> and <code>&lt;list-item&gt;</code></h4>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">list</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;activity-list&#39;</span> <span class="err">?</span><span class="na">activatable</span><span class="o">=</span><span class="s">{{activatable}}</span> <span class="err">@</span><span class="na">select</span><span class="o">=</span><span class="s">{{onSelect}}</span><span class="p">&gt;</span>
+  {{activities.map((activity, idx) =&gt; cpml`
+    <span class="p">&lt;</span><span class="nt">list-item</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;activity-list-item-{{idx}}&#39;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">view</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;content&#39;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">text</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;primary-content&#39;</span><span class="p">&gt;</span>{{activity.content}}<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">view</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">list-item</span><span class="p">&gt;</span>
+  `}}
+<span class="p">&lt;/</span><span class="nt">list</span><span class="p">&gt;</span>
+</code></pre></div>
+<h4 id="image-list"><code>&lt;image-list&gt;</code></h4>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">image-list</span>
+  <span class="na">id</span><span class="o">=</span><span class="s">&#39;redeem-item-list&#39;</span>
+  <span class="na">class</span><span class="o">=</span><span class="s">&#39;item-list&#39;</span>
+  <span class="na">images</span><span class="o">=</span><span class="s">{{images}}</span>
+  <span class="na">columnsCount</span><span class="o">=</span><span class="s">2</span>
+  <span class="na">gutterSize</span><span class="o">=</span><span class="s">10</span>
+  <span class="na">imageFit</span><span class="o">=</span><span class="s">&#39;cover&#39;</span>
+  <span class="na">imageBorderRadius</span><span class="o">=</span><span class="s">0</span>
+  <span class="na">icon</span><span class="o">=</span><span class="s">&#39;redeem&#39;</span>
+  <span class="na">labelStyle</span><span class="o">=</span><span class="s">{{{</span>
+    <span class="na">textTransform:</span> <span class="err">&#39;</span><span class="na">capitalize</span><span class="err">&#39;,</span>
+  <span class="err">}}}</span>
+  <span class="err">?</span><span class="na">hasTextProtection</span><span class="o">=</span><span class="s">{{hasTextProtection}}</span>
+  <span class="err">@</span><span class="na">icontap</span><span class="o">=</span><span class="s">{{onChoose}}</span>
+  <span class="err">@</span><span class="na">imagetap</span><span class="o">=</span><span class="s">{{onImageTap}}</span>
+<span class="p">/&gt;</span>
+</code></pre></div>
+<h2 id="variables-and-expressions">Variables and Expressions</h2>
+<p>CPML supports dynamic rendering with variables and expressions using the <code>{{ }}</code> notation. 
+The variables need to be either defined in the <code>data</code> field of the <code>Page</code> object, 
+or assigned a value in an <a href="#assignment-statement">assignment statement</a>.</p>
+<p>Variables can be used either as a child of a tag or in attributes.</p>
+<div class="tabbed-set" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Variable</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">text</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;title&#39;</span><span class="p">&gt;</span>{{title}}<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Expression</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">text</span><span class="p">&gt;</span>Price: {{item.price / 100.0}}<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><label for="__tabbed_3_3">Variable in attributes</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">switch</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;switch-{{index}}&#39;</span> <span class="err">@</span><span class="na">tap</span><span class="o">=</span><span class="s">{{onTap}}</span> <span class="p">/&gt;</span>
+</code></pre></div>
+</div>
+</div>
+<h3 id="nesting">Nesting</h3>
+<p>CPML elements can be nested inside <code>{{ }}</code> by using the <code>cmpl``</code> notation.</p>
+<p>See the following sections for examples.</p>
+<h3 id="conditionals">Conditionals</h3>
+<p>Conditional rendering can be achieved by either a ternary operator or a null coalescing operator.</p>
+<div class="tabbed-set" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Ternary operator</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>{{activity.hasStayAgain ? cpml`
+  <span class="p">&lt;</span><span class="nt">view</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;action&#39;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">text</span><span class="p">&gt;</span>Stay Again<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">view</span><span class="p">&gt;</span>
+` : &#39;&#39;}}
+</code></pre></div>
+</div>
+<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">Null coalescing operator</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">text</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;item-name&quot;</span><span class="p">&gt;</span>{{item.name ?? &#39;unknown&#39;}}<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+</code></pre></div>
+</div>
+</div>
+<h3 id="loops">Loops</h3>
+<p>Looping through a collection to render each element can be achieved by using the <code>.map()</code> function 
+similar to that in JavaScript.</p>
+<div class="highlight"><pre><span></span><code>  {{activities.map((activity, idx) =&gt; cpml`
+    <span class="p">&lt;</span><span class="nt">list-item</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;activity-list-item-{{idx}}&#39;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">view</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;content&#39;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">text</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;primary-content&#39;</span><span class="p">&gt;</span>{{activity.content}}<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">view</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">list-item</span><span class="p">&gt;</span>
+  `}}
+</code></pre></div>
+<h2 id="assignment-statement">Assignment Statement</h2>
+<p>Assignment statement are added into CPML using the <code>{% %}</code> notation. 
+It mainly serves to declare and initialize new variables for (re)use on the page, 
+to transform or compute certain values based on existing variables defined in the <code>Page</code> object.</p>
+<p>The right hand side of the assignment can either be an expression or some function call.</p>
+<p>It is recommended to put these statements at the top of the CPML file.</p>
+<p>The difference between <code>{{ }}</code> and <code>{% %}</code> is that, <code>{{ }}</code> should always return either a value or a CMPL element,
+whereas <code>{% %}</code> is purely used for declaring and initializing new variables without returning anything.</p>
+<div class="tabbed-set" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">Assignment by expression</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="o">%</span> <span class="nx">percentage</span> <span class="o">=</span> <span class="p">(</span><span class="nx">value</span> <span class="o">-</span> <span class="nx">minValue</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="nx">maxValue</span> <span class="o">-</span> <span class="nx">minValue</span><span class="p">)</span> <span class="o">%</span><span class="p">}</span>
+<span class="o">&lt;</span><span class="nx">text</span><span class="o">&gt;</span><span class="nx">Percentage</span><span class="o">:</span> <span class="p">{{</span><span class="nx">percentage</span><span class="p">}}</span><span class="o">&lt;</span><span class="err">/text&gt;</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><label for="__tabbed_5_2">Assignment by function call</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="o">%</span>
+  <span class="nx">images</span> <span class="o">=</span> <span class="nx">items</span><span class="o">?</span><span class="p">.</span><span class="nx">map</span><span class="p">(({</span> <span class="nx">image</span><span class="p">,</span> <span class="nx">name</span><span class="p">,</span> <span class="nx">price</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">{</span>
+      <span class="nx">imageURL</span><span class="o">:</span> <span class="nx">image</span><span class="p">,</span>
+      <span class="nx">label</span><span class="o">:</span> <span class="sb">`{{name}} {{price.toLocaleString()}}`</span><span class="p">,</span>
+    <span class="p">}</span>
+  <span class="p">})</span>
+<span class="o">%</span><span class="p">}</span>
+</code></pre></div>
+</div>
+</div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href=".." class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Introduction
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../javascript_sdk/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Javascript SDK
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright© 2021 Canopie Pty Ltd. All rights reserved.
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d892486b.min.js"></script>
+      
+    
+  </body>
+</html>

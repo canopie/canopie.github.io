@@ -1,0 +1,547 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <meta name="author" content="Canopie">
+      
+      
+        <link rel="canonical" href="https://canopie.io/">
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.0">
+    
+    
+      
+        <title>Canopie Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.33e2939f.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Canopie Docs" class="md-header__button md-logo" aria-label="Canopie Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Canopie Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Introduction
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Canopie Docs" class="md-nav__button md-logo" aria-label="Canopie Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Canopie Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Introduction
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        Introduction
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-canopie" class="md-nav__link">
+    What is Canopie?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-super-app" class="md-nav__link">
+    What is a Super App?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-flow" class="md-nav__link">
+    General Flow
+  </a>
+  
+    <nav class="md-nav" aria-label="General Flow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-the-invite-code-and-sending-it-to-developers-steps-1-and-2" class="md-nav__link">
+    Creating the Invite Code and Sending it to Developers (Steps 1 and 2)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registering-and-creating-mini-apps-steps-3-and-4" class="md-nav__link">
+    Registering and Creating Mini Apps (Steps 3 and 4)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submitting-and-publishing-steps-5-to-8" class="md-nav__link">
+    Submitting and Publishing (Steps 5 to 8)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="canopie_markup_language/" class="md-nav__link">
+        Canopie Markup Language
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="javascript_sdk/" class="md-nav__link">
+        Javascript SDK
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="review/" class="md-nav__link">
+        Review Status
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mini_app_example/" class="md-nav__link">
+        Mini App Example
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enterprise/" class="md-nav__link">
+        Enterprise Tier
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-canopie" class="md-nav__link">
+    What is Canopie?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-super-app" class="md-nav__link">
+    What is a Super App?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-flow" class="md-nav__link">
+    General Flow
+  </a>
+  
+    <nav class="md-nav" aria-label="General Flow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-the-invite-code-and-sending-it-to-developers-steps-1-and-2" class="md-nav__link">
+    Creating the Invite Code and Sending it to Developers (Steps 1 and 2)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registering-and-creating-mini-apps-steps-3-and-4" class="md-nav__link">
+    Registering and Creating Mini Apps (Steps 3 and 4)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submitting-and-publishing-steps-5-to-8" class="md-nav__link">
+    Submitting and Publishing (Steps 5 to 8)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="introduction">Introduction</h1>
+<h2 id="what-is-canopie">What is Canopie?</h2>
+<p>Canopie is a Super App engine that consists of  a collection of APIs, SDKs, tools and relevant software that enable the creation of an entire ecosystem/marketplace. Canopie services can be deployed on premise or to public cloud. Services provide RESTful APIs and can be white labelled on the UI. This is to help accelerate third party development and bring value to the platform instead of dealing with the plumbing and building an entire marketplace from scratch.</p>
+<h2 id="what-is-a-super-app">What is a Super App?</h2>
+<p>A Super App is a mobile application that has the ability to run other apps inside them. These "Mini Apps" are discreet functionality that are created independently by other developers of the same company or even external third parties to achieve better scalability.</p>
+<p>You can think of the main host app as a shopping mall. The mall leases out space to other shops. These are the Mini Apps. They each have their own independent business models and provide goods and services to the people coming into the shopping mall. The shopping mall provides people, security, parking and common utilities so that the shops can focus on providing value to the customer.</p>
+<p>Technically, Super Apps are mobile applications on either iOS or Android that have their own marketplace or "Mini Apps" inside them. Mini Apps are usually served through a webview and have a specialized subset of HTML and Javascript as its own Domain specific language (DSL). <strong>Mini Apps</strong> have their own load and unload life cycles and provide extra value to the end user by leveraging the assets of the host Super App. </p>
+<p>For a developer perspective on building Mini Apps, read on. For enterprise customers, head to the <a href="/enterprise">enterprise section</a> for more details.</p>
+<h2 id="general-flow">General Flow</h2>
+<p><img alt="Developer Flow" src="images/canopie-general-flow.png" /></p>
+<p>Let's break this down step by step.</p>
+<h3 id="creating-the-invite-code-and-sending-it-to-developers-steps-1-and-2">Creating the Invite Code and Sending it to Developers (Steps 1 and 2)</h3>
+<p>Organizations want to manage invitation campaigns and potentially limit the number of sign ups to the platform. Especially when they are deploying a new ecosystem like Canopie. Canopie gives organizations the ability to track and manage the number of developers signing up via a unique, human readable invitation code.</p>
+<p>This also gives developers that already have an account with Canopie be able to join more than one organization that use Canopie also. This process is more streamlined and you don't need to create multiple developer accounts.</p>
+<p>The first two steps provide this capability. As a developer, if you're wondering if you could deploy your Mini App across more than one organization's Super App, your guess is correct! Just make sure that you cater for custom SDK calls if each ecosystem has a custom SDK. More on that later.</p>
+<h3 id="registering-and-creating-mini-apps-steps-3-and-4">Registering and Creating Mini Apps (Steps 3 and 4)</h3>
+<p>Developers, whether they are individuals or organizations need to register on Canopie. Organizations need to know who you are and verify your identity to ensure that they know who they're talking to and can help you through the process if your app gets rejected due to a guideline issue. Make sure to provide the correct invitation code so that you get associated with the organization.</p>
+<p>Using <a href="/canopie_markup_language">Canopie markup</a> and <a href="/javascript_sdk">JavaScript</a>, you can create Mini Apps. Canopie comes pre-loaded with an SDK and Material UI style so that you don't need to build anything from scratch.</p>
+<div class="admonition example">
+<p class="admonition-title">Example Canopie Code</p>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">CPML</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>{{ 
+  items.map((item, idx) =&gt; cpml`
+    <span class="p">&lt;</span><span class="nt">list-item</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;item-{{idx}}&#39;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">view</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;content&#39;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">text</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;primary-content&#39;</span><span class="p">&gt;</span>{{item.name}}, {{item.price}}<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">view</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">list-item</span><span class="p">&gt;</span>
+  `) 
+}}
+</code></pre></div>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">JavaScript</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="nx">Page</span><span class="p">({</span>
+  <span class="nx">data</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">items</span><span class="o">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Apple&#39;</span><span class="p">,</span>
+        <span class="nx">price</span><span class="o">:</span> <span class="mf">1.50</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Durian&#39;</span><span class="p">,</span>
+        <span class="nx">price</span><span class="o">:</span> <span class="mf">40.00</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<p>This example code loops through the <code>items</code> list and renders a <code>&lt;text&gt;</code> element for each item based on the template.</p>
+<p>On the JavaScript side, the data is pre-loaded for the <strong>Page</strong> that will be loaded for the Mini App. It pre-populates the <code>items</code> variable with a json structure.</p>
+<p>This terminology, examples of Canopie markup and JavaScript will be further explained in the next sections.</p>
+<p>On the Developer portal itself, you need to "create" the Mini App and fill in its details. You'll then get a link to </p>
+<p>Note: Canopie is currently in Alpha and not yet making these tools public. A Visual Studio Code plug-in is also coming soon.</p>
+<h3 id="submitting-and-publishing-steps-5-to-8">Submitting and Publishing (Steps 5 to 8)</h3>
+<p>When you're done and happy with the Mini App. Hop onto the Developer Portal to see your builds. Submit one of those builds to get it reviewed.</p>
+<p>The reviewer in the organization will take a look, launch, test and read the description of your Mini App. They need to ensure that your Mini App follows their organization guidelines and that it provides good value to the end user.</p>
+<p>If everything is good, the reviewer accepts the submission and you then have the option of publishing it into production. The Mini Apps get deployed to a CDN and produce a QR code for users on the Super App to scan and launch.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+      
+        <a href="canopie_markup_language/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Canopie Markup Language
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright© 2021 Canopie Pty Ltd. All rights reserved.
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.d892486b.min.js"></script>
+      
+    
+  </body>
+</html>

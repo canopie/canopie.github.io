@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
+     <loc>https://canopie.io/</loc>
+     <lastmod>2021-09-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://canopie.io/canopie_markup_language/</loc>
+     <lastmod>2021-09-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://canopie.io/javascript_sdk/</loc>
+     <lastmod>2021-09-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://canopie.io/review/</loc>
+     <lastmod>2021-09-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://canopie.io/mini_app_example/</loc>
+     <lastmod>2021-09-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://canopie.io/enterprise/</loc>
+     <lastmod>2021-09-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+</urlset>
